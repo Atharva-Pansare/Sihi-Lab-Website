@@ -12,8 +12,12 @@ layout: default
 * **Dr. Debjani Sihi** (Professor)
 
 ## Researchers
-* **Student Name 1** (Researchers)
-* **Student Name 2** (Researchers)
+## Principal Investigator
+
+![Photo of Atharva Pansare]({{ site.baseurl }}/assets/images/avatar.jpg)
+
+* **Atharva Pansare** (Researcher)
+* **Student Name 2** (Researcher)
 
 ## PhD Students
 * **Student Name 1** (PhD Student)
