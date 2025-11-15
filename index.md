@@ -2,7 +2,7 @@
 layout: default
 ---
 
-**[Home](.)** | **[People](people.md)** | **[Research](research.md)** | **[Publications](publications.md)** | **[News](news.md)** | **[Contact](contact.md)**
+**[Home](.)** | **[People](people.md)** | **[Teaching](Teaching.md)** | **[Publications](publications.md)** | **[News](news.md)** | **[Contact](contact.md)**
 
 ---
 
