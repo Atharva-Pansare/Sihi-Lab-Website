@@ -13,7 +13,7 @@ layout: default
 
 ## Researchers
 
-<img src="{{ site.baseurl }}/assets/images/avatar.jpg" alt="Photo of Atharva" width="400">
+<img src="{{ site.baseurl }}/assets/images/avatar.jpg" alt="Photo of Atharva" width="200">
 
 * **Atharva Pansare** (Researcher)
 * **Student Name 2** (Researcher)
