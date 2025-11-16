@@ -1,5 +1,1 @@
-
-{% include navbar.html %}
----
-
 # Publications
