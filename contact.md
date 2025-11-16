@@ -1,8 +1,3 @@
-
-{% include navbar.html %}
-
----
-
 # Contact Us
 
 If you are interested in joining my research group, contact me at dsihi@ncsu.edu.
