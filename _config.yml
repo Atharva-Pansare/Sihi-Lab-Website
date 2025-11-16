@@ -1,17 +1,33 @@
 # --- Site Settings ---
-# (Edit these to your liking)
-title: Sihi Biogeochemistry Lab
-description: Research group of Dr. Debjani Sihi at NC State University.
+title: "Sihi Lab"
+description: "Soil and Environmental Systems Research at Emory University"
+baseurl: "/Sihi-Lab-Website" # Your repository name
+url: "https://Atharva-Pansare.github.io" # Your GitHub Pages URL
 
-# --- Build Settings ---
-# (These values are critical and now match YOUR account)
-baseurl: "/Sihi-Lab-Website"  # This MUST match your repository name
-url: "https://Atharva-Pansare.github.io" # This is YOUR personal GitHub Pages URL
+# --- Theme ---
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default" # You can try "air", "aqua", "contrast", etc.
 
-# --- Theme Settings ---
-theme: jekyll-theme-cayman
+# --- Navigation ---
+# This creates the main navigation bar at the top
+main_nav:
+  - title: "Home"
+    url: /
+  - title: "People"
+    url: /people/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Publications"
+    url: /publications/
+  - title: "News"
+    url: /news/
 
-# --- Plugins ---
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+# --- Footer Links ---
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/DebjaniSihiLab"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:debjani.sihi@emory.edu"
