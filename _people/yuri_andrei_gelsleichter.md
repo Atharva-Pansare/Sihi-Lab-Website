@@ -1,6 +1,6 @@
 ---
 name: "Yuri Andrei Gelsleichter"
-title: "Researcher"
+title: "Researchers"
 image_path: "/assets/images/yuri_andrei_gelsleichter.jpg"
 ---
 
