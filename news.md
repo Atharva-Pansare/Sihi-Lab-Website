@@ -1,5 +1,6 @@
+---
 # Lab News
-
+---
 Here are our latest updates:
 
 <ul>
