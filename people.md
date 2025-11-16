@@ -1,7 +1,4 @@
 ---
-# We don't even need 'layout: default' anymore, 
-# because _config.yml handles it!
----
 
 # Lab Members
 
