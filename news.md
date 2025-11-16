@@ -1,7 +1,3 @@
-
-{% include navbar.html %}
----
-
 # Lab News
 
 Here are our latest updates:
