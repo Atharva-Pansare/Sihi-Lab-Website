@@ -5,10 +5,6 @@
 ---
 ## Principal Investigator
 
-{% comment %}
-This loops through all files in _people 
-and finds anyone with the title "Principal Investigator"
-{% endcomment %}
 
 {% assign members = site.people | where: "title", "Principal Investigator" %}
 {% for person in members %}
@@ -25,10 +21,6 @@ and finds anyone with the title "Principal Investigator"
 
 ---
 ## Researchers
-
-{% comment %}
-This loops through and finds all "PhD Student" members
-{% endcomment %}
 
 {% assign members = site.people | where: "title", "Researcher" %}
 {% for person in members %}
