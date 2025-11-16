@@ -1,5 +1,3 @@
-{% include navbar.html %}
----
 
 # Welcome to the Sihi Lab
 
