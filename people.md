@@ -1,81 +1,70 @@
 ---
-layout: default
----
-
-{% include navbar.html %}
-
+# We don't even need 'layout: default' anymore, 
+# because _config.yml handles it!
 ---
 
 # Lab Members
 
+---
 ## Principal Investigator
 
-<div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
-  <img src="{{ site.baseurl }}/assets/images/dr_sihi.jpg" alt="Photo of Dr. Sihi" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
-  <br>
-  <b>Dr. Debjani Sihi</b>
-  <br>
-  Professor
-</div>
+{% comment %}
+This loops through all files in _people 
+and finds anyone with the title "Principal Investigator"
+{% endcomment %}
+
+{% assign members = site.people | where: "title", "Principal Investigator" %}
+{% for person in members %}
+  <a href="{{ person.url | relative_url }}" style="text-decoration: none; color: inherit;">
+    <div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
+      <img src="{{ person.image_path | relative_url }}" alt="Photo of {{ person.name }}" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
+      <br>
+      <b>{{ person.name }}</b>
+      <br>
+      {{ person.title }}
+    </div>
+  </a>
+{% endfor %}
 
 ---
 ## Researchers
 
-<div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
-  <img src="{{ site.baseurl }}/assets/images/atharva.jpg" alt="Photo of Student 1" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
-  <br>
-  <b>Atharva Pansare</b>
-  <br>
-  Research Assistant AI/ML
-</div>
+{% comment %}
+This loops through and finds all "PhD Student" members
+{% endcomment %}
 
-<div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
-  <img src="{{ site.baseurl }}/assets/images/student2.jpg" alt="Photo of Student 2" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
-  <br>
-  <b>Rongyuan Tang</b>
-  <br>
-  Post Doc
-</div>
-
-<div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
-  <img src="{{ site.baseurl }}/assets/images/student3.jpg" alt="Photo of Student 3" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
-  <br>
-  <b>Yuri Andrei Gelsleichter</b>
-  <br>
-  Collaborator (Digital Soil Mapping)
-</div>
-
+{% assign members = site.people | where: "title", "Researcher" %}
+{% for person in members %}
+  <a href="{{ person.url | relative_url }}" style="text-decoration: none; color: inherit;">
+    <div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
+      <img src="{{ person.image_path | relative_url }}" alt="Photo of {{ person.name }}" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
+      <br>
+      <b>{{ person.name }}</b>
+      <br>
+      {{ person.title }}
+    </div>
+  </a>
+{% endfor %}
 ---
 ## PhD Students
 
-<div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
-  <img src="{{ site.baseurl }}/assets/images/avatar.jpg" alt="Photo of Student 1" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
-  <br>
-  <b>Student Name 1</b>
-  <br>
-  PhD Student
-</div>
+{% comment %}
+This loops through and finds all "PhD Student" members
+{% endcomment %}
 
-<div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
-  <img src="{{ site.baseurl }}/assets/images/student2.jpg" alt="Photo of Student 2" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
-  <br>
-  <b>Student Name 2</b>
-  <br>
-  PhD Student
-</div>
+{% assign members = site.people | where: "title", "PhD Student" %}
+{% for person in members %}
+  <a href="{{ person.url | relative_url }}" style="text-decoration: none; color: inherit;">
+    <div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
+      <img src="{{ person.image_path | relative_url }}" alt="Photo of {{ person.name }}" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
+      <br>
+      <b>{{ person.name }}</b>
+      <br>
+      {{ person.title }}
+    </div>
+  </a>
+{% endfor %}
 
-<div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
-  <img src="{{ site.baseurl }}/assets/images/student3.jpg" alt="Photo of Student 3" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
-  <br>
-  <b>Student Name 3</b>
-  <br>
-  PhD Student
-</div>
-
-<div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
-  <img src="{{ site.baseurl }}/assets/images/student4.jpg" alt="Photo of Student 4" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
-  <br>
-  <b>Student Name 4</b>
-  <br>
-  PhD Student
-</div>
+---
+## Alumni
+* (You can still add alumni manually here, or create a 'Alumni' title for them)
