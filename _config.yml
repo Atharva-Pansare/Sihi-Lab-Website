@@ -1,12 +1,10 @@
 # --- Site Settings ---
-# (Edit these to your liking)
 title: Sihi Lab | Soil and Environmental Systems Research
 description: Research group of Dr. Debjani Sihi at NC State University.
 
 # --- Build Settings ---
-# (These values are critical and now match YOUR account)
-baseurl: "/Sihi-Lab-Website"  # This MUST match your repository name
-url: "https://Atharva-Pansare.github.io" # This is YOUR personal GitHub Pages URL
+baseurl: "/Sihi-Lab-Website" 
+url: "https://Atharva-Pansare.github.io" 
 
 # --- Theme Settings ---
 theme: jekyll-theme-cayman
@@ -15,3 +13,24 @@ theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# --- NEW: Define Collections ---
+# This tells Jekyll to look for a _people folder
+# and to create individual pages for each person (output: true)
+collections:
+  people:
+    output: true
+
+# --- NEW: Set Defaults ---
+# This automatically applies our custom layout to all pages
+# and all "people" files, so we don't have to.
+defaults:
+  - scope:
+      path: "" # an empty string for all files
+    values:
+      layout: "custom" # Use our new custom layout
+  - scope:
+      path: ""
+      type: "people" # all files in the _people collection
+    values:
+      layout: "custom" # Also use our custom layout
