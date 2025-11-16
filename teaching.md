@@ -1,8 +1,2 @@
-
----
-
-{% include navbar.html %}
----
-
 # Teaching
 
