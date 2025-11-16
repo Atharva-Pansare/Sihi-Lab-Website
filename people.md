@@ -3,9 +3,6 @@ layout: default
 ---
 
 {% include navbar.html %}
----
-
-**[Home](.)** | **[People](people.md)** | **[Teaching](teaching.md)** | **[Publications](publications.md)** | **[News](news.md)** | **[Contact](contact.md)**
 
 ---
 
