@@ -12,7 +12,6 @@
   Professor
 </div>
 
----
 
 ## PhD Students
 
