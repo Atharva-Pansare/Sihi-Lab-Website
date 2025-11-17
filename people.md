@@ -1,59 +1,76 @@
 ---
+layout: default
+---
+
+**[Home](.)** | **[People](people.md)** | **[Teaching](teaching.md)** | **[Publications](publications.md)** | **[News](news.md)** | **[Contact](contact.md)**
+
+---
 
 # Lab Members
 
----
 ## Principal Investigator
+* **Dr. Debjani Sihi** (Professor)
 
-
-{% assign members = site.people | where: "title", "Principal Investigator" %}
-{% for person in members %}
-  <a href="{{ person.url | relative_url }}" style="text-decoration: none; color: inherit;">
-    <div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
-      <img src="{{ person.image_path | relative_url }}" alt="Photo of {{ person.name }}" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
-      <br>
-      <b>{{ person.name }}</b>
-      <br>
-      {{ person.title }}
-    </div>
-  </a>
-{% endfor %}
-
----
 ## Researchers
 
-{% assign members = site.people | where: "title", "Researcher" %}
-{% for person in members %}
-  <a href="{{ person.url | relative_url }}" style="text-decoration: none; color: inherit;">
-    <div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
-      <img src="{{ person.image_path | relative_url }}" alt="Photo of {{ person.name }}" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
-      <br>
-      <b>{{ person.name }}</b>
-      <br>
-      {{ person.title }}
-    </div>
-  </a>
-{% endfor %}
+<img src="{{ site.baseurl }}/assets/images/avatar.jpg" alt="Photo of Atharva" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;" >
+
+* **Atharva Pansare** (Researcher)
+* **Student Name 2** (Researcher)
+
+## PhD Students
+* **Student Name 1** (PhD Student)
+* **Student Name 2** (PhD Student)
+
+## Alumni
+* **Student Name 1** (Alumni)
+* **Student Name 2** (Alumni)
+
+
+# Lab Members
+
+## Principal Investigator
+
+<div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
+  <img src="{{ site.baseurl }}/assets/images/dr_sihi.jpg" alt="Photo of Dr. Sihi" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
+  <br>
+  <b>Dr. Debjani Sihi</b>
+  <br>
+  Professor
+</div>
+
 ---
+
 ## PhD Students
 
-{% comment %}
-This loops through and finds all "PhD Student" members
-{% endcomment %}
+<div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
+  <img src="{{ site.baseurl }}/assets/images/atharva.jpg" alt="Photo of Student 1" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
+  <br>
+  <b>Student Name 1</b>
+  <br>
+  PhD Student
+</div>
 
-{% assign members = site.people | where: "title", "PhD Student" %}
-{% for person in members %}
-  <a href="{{ person.url | relative_url }}" style="text-decoration: none; color: inherit;">
-    <div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
-      <img src="{{ person.image_path | relative_url }}" alt="Photo of {{ person.name }}" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
-      <br>
-      <b>{{ person.name }}</b>
-      <br>
-      {{ person.title }}
-    </div>
-  </a>
-{% endfor %}
+<div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
+  <img src="{{ site.baseurl }}/assets/images/atharva.jpg" alt="Photo of Student 2" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
+  <br>
+  <b>Student Name 2</b>
+  <br>
+  PhD Student
+</div>
 
----
-## Alumni
-* (You can still add alumni manually here, or create a 'Alumni' title for them)
+<div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
+  <img src="{{ site.baseurl }}/assets/images/atharva.jpg" alt="Photo of Student 3" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
+  <br>
+  <b>Student Name 3</b>
+  <br>
+  PhD Student
+</div>
+
+<div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
+  <img src="{{ site.baseurl }}/assets/images/student4.jpg" alt="Photo of Student 4" style="width:200px; height:200px; object-fit: cover; border-radius: 50%;">
+  <br>
+  <b>Student Name 4</b>
+  <br>
+  PhD Student
+</div>
