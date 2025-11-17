@@ -29,8 +29,3 @@ defaults:
       path: "" # an empty string for all files
     values:
       layout: "custom" # Use our new custom layout
-  - scope:
-      path: ""
-      type: "people" # all files in the _people collection
-    values:
-      layout: "custom" # Also use our custom layout
