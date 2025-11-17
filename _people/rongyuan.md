@@ -1,6 +1,6 @@
 ---
 name: "Rongyuan Tang"
-title: "Researcher"
+title: "Researchers"
 image_path: "/assets/images/rongyuan_tang.jpg"
 ---
 
