@@ -1,8 +1,6 @@
 ---
-
+---
 # Lab Members
-
-
 
 ## Principal Investigator
 
