@@ -1,6 +1,8 @@
 ---
 # Lab Members
 
+---
+
 ## Principal Investigator
 
 <div style="display: inline-block; width: 30%; text-align: center; vertical-align: top; padding: 15px;">
